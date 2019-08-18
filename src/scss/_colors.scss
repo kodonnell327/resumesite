@@ -1,0 +1,12 @@
+// Never go more than 3 levels deep for nesting
+// consider using hsl? I haven't used that before
+
+
+$background-primary: hsl(0, 0%, 100%);
+$background-secondary: hsl(0, 50%, 40%); //hsl(270, 3%, 41%);
+$background-tertiary: hsl(284, 20%, 25%);
+
+$text-primary: hsl(329, 49%, 10%);
+$text-secondary: hsl(0, 0%, 100%);
+
+$transparent: hsla(0, 0%, 0%, 0);

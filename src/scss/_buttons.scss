@@ -1,0 +1,11 @@
+// Placeholders are good for reusable code
+// Mixins should only be used when given arguments
+/* EX:
+@mixin btn-background($btn-background) {
+    @extend %btn; // this is a placeholder
+    background-color: $btn-background;
+    &:hover {
+        background-color: lighten($btn-background, 10%);
+    }
+}
+*/

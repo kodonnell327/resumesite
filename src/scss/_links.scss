@@ -1,0 +1,22 @@
+@import "./colors.scss";
+
+@mixin link($txt-color, $active-color) {
+    background-color: $transparent;
+    color: scale-color($txt-color, $lightness: -20%);
+    font-size: 1em;
+    text-transform: capitalize;
+    transition: ease-in 300ms;
+    border-radius: 0.25em;
+    padding: 0.25em;
+    margin: 2em;
+    text-decoration: none;
+    &:hover {
+        color: scale-color($txt-color, $lightness: 20%);
+        background-color: scale-color($transparent, $alpha: 20%);
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &:active {
+        background-color: $active-color;
+    }
+}
