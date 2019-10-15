@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/resumesite/static/css/main.fc54b1fd.chunk.css",
-    "main.js": "/resumesite/static/js/main.a05e2b7d.chunk.js",
-    "main.js.map": "/resumesite/static/js/main.a05e2b7d.chunk.js.map",
+    "main.js": "/resumesite/static/js/main.d6608db5.chunk.js",
+    "main.js.map": "/resumesite/static/js/main.d6608db5.chunk.js.map",
     "runtime~main.js": "/resumesite/static/js/runtime~main.6645f16d.js",
     "runtime~main.js.map": "/resumesite/static/js/runtime~main.6645f16d.js.map",
-    "static/js/2.15fbe00d.chunk.js": "/resumesite/static/js/2.15fbe00d.chunk.js",
-    "static/js/2.15fbe00d.chunk.js.map": "/resumesite/static/js/2.15fbe00d.chunk.js.map",
+    "static/js/2.3d171352.chunk.js": "/resumesite/static/js/2.3d171352.chunk.js",
+    "static/js/2.3d171352.chunk.js.map": "/resumesite/static/js/2.3d171352.chunk.js.map",
     "index.html": "/resumesite/index.html",
-    "precache-manifest.d80faac4b65bb1274079a35d5d7b3495.js": "/resumesite/precache-manifest.d80faac4b65bb1274079a35d5d7b3495.js",
+    "precache-manifest.98676e13110f34ed030f29d5e059428e.js": "/resumesite/precache-manifest.98676e13110f34ed030f29d5e059428e.js",
     "service-worker.js": "/resumesite/service-worker.js",
-    "static/css/main.fc54b1fd.chunk.css.map": "/resumesite/static/css/main.fc54b1fd.chunk.css.map"
+    "static/css/main.fc54b1fd.chunk.css.map": "/resumesite/static/css/main.fc54b1fd.chunk.css.map",
+    "static/media/cat.jpg": "/resumesite/static/media/cat.d06ff109.jpg"
   }
 }
