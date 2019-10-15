@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import './scss/global.scss';
+import './scss/menu.scss';
 
 function Menu() {
     return (
-        <header className="App-header">
-            <ul className="header-list">
-                <li className='header-list-item'>
-                    <Link to='/' className="header-link">
+        <header className="menu-header">
+            <ul className="menu-list">
+                <li className='menu-list-item'>
+                    <Link to='/' className="menu-link">
                     Home</Link>
                 </li>
-                <li className="header-list-item">
-                <Link to='/about' className="header-link">
+                <li className="menu-list-item">
+                <Link to='/about' className="menu-link">
                     About</Link>
                 </li>
             </ul>

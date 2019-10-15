@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './menu';
-import './scss/global.scss';
+import './scss/home.scss';
 import cat from './cat.jpg';
 
 class Home extends React.Component {

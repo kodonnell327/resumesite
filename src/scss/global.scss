@@ -46,47 +46,6 @@ code {
     monospace;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: $background-secondary;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  //justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: $text-secondary;
-  //position: fixed;
-  /*
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  */
-}
-
-.App-body {
-  background-color: $background-primary;
-  color: $text-primary;
-}
-
-.header-link {
-  @include link($text-secondary, $background-tertiary);
-}
-
-
-.header-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-list-item {
-  display: inline;
-}
-
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
