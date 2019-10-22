@@ -7,7 +7,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="Home">
-                <Menu></Menu>
+                <Menu currentPage="home"></Menu>
                 <div className="Home-body">
                     <h1>Welcome!</h1>
                     <p>This site is a work in progress. 
