@@ -3,9 +3,11 @@ import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom
 import {PATH_ABOUT, PATH_HOME} from "../constants/path";
 import HomeContainer from "./HomeContainer";
 import AboutContainer from "./AboutContainer";
+import MenuComponent from "../components/MenuComponent";
 
 const RootContainer = () => (
     <Router>
+        <MenuComponent/>
         <Switch>
             <Route
                 path={PATH_HOME}
