@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import './scss/menu.scss';
+import '../scss/menu.scss';
 import {Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink} from 'reactstrap';
 
-function Menu() {
+function MenuComponent() {
     return (
         <Navbar color="light" light expand="md">
             <NavbarBrand>reactstrap</NavbarBrand>
@@ -16,7 +16,7 @@ function Menu() {
     );
 }
 
-export default Menu;
+export default MenuComponent;
 
 /*
 <header className="menu-header">
