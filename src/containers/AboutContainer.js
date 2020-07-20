@@ -3,9 +3,8 @@ import MenuComponent from "../components/MenuComponent";
 
 const AboutContainer = () => (
     <div>
-        <MenuComponent></MenuComponent>
+        <MenuComponent/>
         <h1>About Me!</h1>
-        <p></p>
     </div>
 )
 

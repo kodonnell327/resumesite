@@ -1,6 +1,4 @@
 import React from 'react';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import '../scss/menu.scss';
 import {Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink} from 'reactstrap';
 
 function MenuComponent() {
