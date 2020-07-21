@@ -1,62 +1,61 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     Navbar,
     NavbarBrand,
     Nav,
     NavLink,
-    DropdownItem, NavItem
+    DropdownItem, NavItem, NavbarToggler, Collapse, NavbarText
 } from 'reactstrap';
 import {PATH_ABOUT, PATH_HOME, PATH_LINKED_IN} from "../constants/path";
+// It's important that these are imported from lib for some reason. Otherwise the dropdown does not work.
 import UncontrolledDropdown from "reactstrap/lib/UncontrolledDropdown";
 import DropdownToggle from "reactstrap/lib/DropdownToggle";
 import DropdownMenu from "reactstrap/lib/DropdownMenu";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Badge from "reactstrap/lib/Badge";
 
 function MenuComponent() {
-    return (
-        <Navbar color="light" light>
-            <NavbarBrand href={PATH_HOME}>Kaitlyn O'Donnell</NavbarBrand>
-            <Nav className="mr-auto" navbar>
+    const [isOpen, setIsOpen] = useState(false);
 
-                <UncontrolledDropdown nav>
-                    <DropdownToggle nav caret>
-                        About Me
-                    </DropdownToggle>
-                    <DropdownMenu>
-                        <DropdownItem>
+    const toggle = () => setIsOpen(!isOpen);
+
+    return (
+        <div>
+            <Navbar color="light" light expand="md">
+                <NavbarBrand href="/">Kaitlyn O'Donnell</NavbarBrand>
+                <NavbarToggler onClick={toggle}/>
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="mr-auto" navbar>
+                        <NavItem>
                             <NavLink href={PATH_ABOUT}>Work History</NavLink>
-                        </DropdownItem>
-                        <DropdownItem>
+                        </NavItem>
+                        <NavItem>
                             <NavLink href={PATH_ABOUT}>University</NavLink>
-                        </DropdownItem>
-                    </DropdownMenu>
-                </UncontrolledDropdown>
-                <NavItem>
-                    <NavLink href={PATH_HOME}>Contact Me</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href={PATH_LINKED_IN}>
-                        <FontAwesomeIcon icon={["fab", "linkedin"]} color="black" size="2x"/>
-                    </NavLink>
-                </NavItem>
-            </Nav>
-        </Navbar>
+                        </NavItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Contact Me
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    <NavLink href={PATH_LINKED_IN}>LinkedIn</NavLink>
+                                    <FontAwesomeIcon icon="linkedin"/>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink href={PATH_LINKED_IN}>LinkedIn</NavLink>
+                                </DropdownItem>
+                                <DropdownItem divider/>
+                                <DropdownItem>
+                                    <NavLink href={PATH_LINKED_IN}>Email Me</NavLink>
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                    </Nav>
+                    <NavbarText>Simple Text</NavbarText>
+                </Collapse>
+            </Navbar>
+        </div>
     );
 }
 
 export default MenuComponent;
-
-/*
-<header className="menu-header">
-    <ul className="menu-list">
-        <li className='menu-list-item'>
-            <Link to='/' className="menu-link">
-            Home</Link>
-        </li>
-        <li className="menu-list-item">
-        <Link to='/about' className="menu-link">
-            About</Link>
-        </li>
-    </ul>
-</header>
-*/
