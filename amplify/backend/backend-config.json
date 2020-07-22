@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"resumesite0a1f2f3a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"resumesiteContentStorage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

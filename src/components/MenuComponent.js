@@ -39,7 +39,7 @@ function MenuComponent() {
                             <DropdownMenu right>
                                 <DropdownItem>
                                     <NavLink href={PATH_LINKED_IN}>LinkedIn</NavLink>
-                                    <FontAwesomeIcon icon="linkedin"/>
+                                    <FontAwesomeIcon icon={["fab", "linkedin"]}/>
                                 </DropdownItem>
                                 <DropdownItem>
                                     <NavLink href={PATH_LINKED_IN}>LinkedIn</NavLink>
